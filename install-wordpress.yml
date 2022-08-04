@@ -1,0 +1,13 @@
+- hosts: "{{ host | default('wordpress')}}"
+  become: true
+  vars:
+    wp_version: 5.7.1
+    wp_webserver: nginx
+    wp_mysql_db: 'database'
+    wp_mysql_user: 'mysql_user'
+    wp_mysql_password: 'mysql_pass'
+    wp_admin_email: 'admin@example.com'
+    wp_sitename: 192.168.3.83
+    wp_install_dir: "/var/www/192.168.3.83"
+  roles:
+    - wordpress

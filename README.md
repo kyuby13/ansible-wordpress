@@ -2,8 +2,10 @@
 Install wordpress + nginx + php + myslq dengan ansible
 # OS Client
 Ubuntu 20.04 lts
-#silahkan clone
-git clone ...
+
+# silahkan clone
+
+git clone https://github.com/kyuby13/ansible-wordpress.git
 # Setup Host Ansible
 Contoh disini : host nya 192.168.3.83
 
